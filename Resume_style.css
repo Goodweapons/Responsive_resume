@@ -1,0 +1,85 @@
+.resume {
+    display: grid;
+    width  : 75mm;
+    /* hardcoded purely for codepen example */
+    height: 40mm;
+    /* hardcoded purely for codepen example */
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows   : 1fr 1fr 1fr 1fr;
+    box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+    grid-template-areas  :
+    
+        "photo education"
+        "name work"
+        "about work"
+        "skills community";
+}
+
+.circle_image {
+    border          : 1px solid black;
+    background-color: white;
+    height          : 60px;
+    width           : 50px;
+    border-radius   : 60%;
+    overflow: hidden;
+    align-items: center;
+}
+
+.grid-area {
+    padding: 1em 1em 1em 1em;
+    border : 1px black solid;
+    font-size: small;
+}
+
+.name {
+    grid-area: name;
+    background-color: grey;
+}
+
+.photo {
+    grid-area       : photo;
+    background-color: grey;
+}
+
+.about {
+    grid-area       : about;
+    background-color: grey;
+}
+
+.work {
+    grid-area: work;
+    height: auto;
+    width: auto;
+}
+
+.skills {
+    grid-area       : skills;
+    background-color: grey;
+}
+
+.education {
+    grid-area       : education;
+width: auto;
+height: auto;
+}
+table{
+    width: aotu;
+}
+td,th{
+    border:solid hidden; ;text-align:left; font-size: small;padding-left: 20px;
+}
+
+.declaration {
+    grid-area: community;
+    height: auto;
+    width: auto;
+}
+
+/* align cv to center of page */
+
+.wrapper {
+    padding       : 0;
+    display       : flex;
+    flex-direction: column-reverse;
+    align-items   : left;
+}
